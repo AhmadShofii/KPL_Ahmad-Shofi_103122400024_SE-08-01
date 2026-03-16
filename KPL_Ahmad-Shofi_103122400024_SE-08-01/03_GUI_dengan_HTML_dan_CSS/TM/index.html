@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pengkonversi Gaya Teks</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pengkonversi Gaya Teks</h1>
+    <p>Alat ini bisa menghitung huruf kecil serta mengubah teks menjadi huruf besar atau huruf kecil.</p>
+
+    <label for="teks">Masukkan teks:</label>
+    <textarea id="teks" placeholder="Kata-kata..." oninput="hitungHurufKecil()"></textarea>
+
+    <p>
+      Huruf kecil: <span id="hk">0</span>
+    </p>
+
+    <div class="btn">
+      <button id="huruf-besar" onclick="ubahKeHurufBesar()">Besarkan</button>
+      <button id="huruf-kecil" onclick="ubahKeHurufKecil()">Kecilkan</button>
+    </div>
+
+    <label for="editor-kecil">Hasil:</label>
+    <textarea id="editor-kecil" placeholder="Hasil konversi..." readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
