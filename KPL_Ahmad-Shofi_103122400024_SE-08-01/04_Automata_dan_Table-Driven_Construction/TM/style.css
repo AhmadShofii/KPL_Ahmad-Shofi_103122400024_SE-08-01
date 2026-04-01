@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+    font-family: 'Inconsolata', monospace;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background: #ddd;
+    padding: 40px;
+    width: 600px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+#editor-kecil {
+    margin-top: 10px;
+    background: #f5f5f5;
+}
+
+.btn, .mode-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: #29ddcc;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inconsolata', monospace;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Light Mode (Default) */
+body.light-mode {
+    background: #f0f0f0;
+}
+
+.container.light-mode {
+    background: #ddd;
+    color: black;
+}
+
+.container.light-mode textarea {
+    background: white;
+    color: black;
+}
+
+.container.light-mode #editor-kecil {
+    background: #f5f5f5;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #1e1e1e;
+}
+
+.container.dark-mode {
+    background: #2e3443;
+    color: white;
+}
+
+.container.dark-mode textarea {
+    background: #2e3443;
+    color: white;
+    border: 1px solid #4a5568;
+}
+
+.container.dark-mode #editor-kecil {
+    background: #2e3443;
+    color: white;
+}
+
+.container.dark-mode button {
+    background: #29ddcc;
+    color: inherit;
+}
+
+/* Sepia Mode */
+body.sepia-mode {
+    background: #F4ECD8;
+}
+
+.container.sepia-mode {
+    background: #F4ECD8;
+    color: #5B4636;
+}
+
+.container.sepia-mode textarea {
+    background: white;
+    color: #5B4636;
+    border: 1px solid #d4c5a8;
+}
+
+.container.sepia-mode #editor-kecil {
+    background: white;
+    color: #5B4636;
+}
+
+.container.sepia-mode button {
+    background: #29ddcc;
+    color: inherit;
+}
