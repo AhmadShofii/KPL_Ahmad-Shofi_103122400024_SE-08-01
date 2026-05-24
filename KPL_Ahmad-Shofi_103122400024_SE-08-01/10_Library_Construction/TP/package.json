@@ -1,0 +1,10 @@
+{
+  "name": "pustaka-teks",
+  "version": "1.0.0",
+  "description": "Pustaka JavaScript untuk menghitung jumlah huruf dan jumlah kata",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

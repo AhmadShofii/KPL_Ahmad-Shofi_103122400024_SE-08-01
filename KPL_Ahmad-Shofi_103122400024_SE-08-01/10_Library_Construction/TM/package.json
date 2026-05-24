@@ -1,0 +1,9 @@
+{
+  "name": "mtk-gampang",
+  "version": "1.0.0",
+  "description": "Pustaka JavaScript sederhana untuk operasi matematika",
+  "main": "index.js",
+  "type": "module",
+  "author": "Ahmad Shofi",
+  "license": "ISC"
+}
